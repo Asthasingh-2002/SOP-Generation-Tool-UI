@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
     
-    <div class="container">
+    <div class="main-container">
         <h1>Application Form</h1>
         <form id="userForm" action="/" method="POST">
             <section>
@@ -21,17 +21,17 @@
 
                   <div class="mb-3">
                     <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
                   </div>
 
                   <div class="mb-3">
                     <label for="fullName" class="form-label">Full Name:</label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" name="fullName">
+                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" name="fullName" required>
                   </div>
                   
                   <div class="mb-3">
                     <label for="age" class="form-label">Age:</label>
-                    <input type="text" class="form-control" id="age" placeholder="Age" name="age">
+                    <input type="number" class="form-control" id="age" placeholder="Age" name="age" required>
                   </div>
 
                   <div class="mb-3">
@@ -48,38 +48,14 @@
 
                   <div class="mb-3">
                     <label for="institute" class="form-label">Institute where you completed your highest level of education:</label>
-                    <input type="text" class="form-control" id="institute" placeholder="Institute Name" name="institute">
+                    <input type="text" class="form-control" id="institute" placeholder="Institute Name" name="institute" required>
                   </div>
 
                   <div class="mb-3">
                     <label for="study" class="form-label">Study:</label>
-                    <input type="text" class="form-control" id="study" placeholder="Study" name="study">
+                    <input type="text" class="form-control" id="study" placeholder="Study" name="study" required>
                   </div>
 
-                <!-- <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
-
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required>
-
-                <label for="education">Highest Level of Education:</label>
-                <select id="education" name="education" required>
-                    <option value="" disabled selected>Choose...</option>
-                    <option value="Grade 12">Grade 12</option>
-                    <option value="Diploma">Diploma</option>
-                    <option value="Bachelor's Degree">Bachelor's Degree</option>
-                    <option value="Master's Degree">Master's Degree</option>
-                    <option value="PhD">PhD</option>
-                </select>
-
-                <label for="institute">Institute where you completed your highest level of education:</label>
-                <input type="text" id="institute" name="institute" required>
-
-                <label for="study">What did you study:</label>
-                <input type="text" id="study" name="study" required> -->
             </div>
             </section>
 
@@ -89,37 +65,24 @@
 
                     <div class="mb-3">
                         <label for="workExperience" class="form-label">Do you have any relevant work experience?</label>
-                        <input type="text" class="form-control" id="workExperience" placeholder="Work experience" name="workExperience">
+                        <input type="text" class="form-control" id="workExperience" placeholder="Work experience" name="workExperience" required>
                       </div>
 
                       <div class="mb-3">
                         <label for="jobTitle" class="form-label">Job Title:</label>
-                        <input type="text" class="form-control" id="jobTitle" placeholder="Job Title" name="jobTitle">
+                        <input type="text" class="form-control" id="jobTitle" placeholder="Job Title" name="jobTitle" required>
                       </div>
 
                       <div class="mb-3">
                         <label for="companyName" class="form-label">Company Name:</label>
-                        <input type="text" class="form-control" id="companyName" placeholder="Company Name" name="companyName">
+                        <input type="text" class="form-control" id="companyName" placeholder="Company Name" name="companyName" required>
                       </div>
 
                       <div class="mb-3">
                         <label for="jobDuties" class="form-label">Job Duties:</label>
-                        <input type="text" class="form-control" id="jobDuties" placeholder="Job Duties" name="jobDuties">
+                        <input type="text" class="form-control" id="jobDuties" placeholder="Job Duties" name="jobDuties" required>
                       </div>
 
-                <!-- <label for="workExperience">Do you have any relevant work experience?</label>
-                <input type="text" id="workExperience" name="workExperience"
-                    placeholder="Write None if no work experience" required> -->
-
-                <!-- Conditional fields for work experience -->
-                    <!-- <label for="jobTitle">Job Title:</label>
-                    <input type="text" id="jobTitle" name="jobTitle">
-
-                    <label for="companyName">Company Name:</label>
-                    <input type="text" id="companyName" name="companyName">
-
-                    <label for="jobDuties">Job Duties:</label>
-                    <textarea id="jobDuties" name="jobDuties"></textarea> -->
                 </div>
             </section>
 
@@ -129,35 +92,23 @@
 
                     <div class="mb-3">
                         <label for="admissionInstitute" class="form-label">What institute did you get admitted to in Canada?</label>
-                        <input type="text" class="form-control" id="admissionInstitute" placeholder="" name="admissionInstitute">
+                        <input type="text" class="form-control" id="admissionInstitute" placeholder="Please Enter..." name="admissionInstitute">
                       </div>
                       
                       <div class="mb-3">
                         <label for="programOfStudy" class="form-label">What is your program of study in Canada?</label>
-                        <input type="text" class="form-control" id="programOfStudy" placeholder="" name="programOfStudy">
+                        <input type="text" class="form-control" id="programOfStudy" placeholder="Please Enter..." name="programOfStudy">
                       </div>
 
                       <div class="mb-3">
                         <label for="applyingCountry" class="form-label">Which country are you applying from?</label>
-                        <input type="text" class="form-control" id="applyingCountry" placeholder="" name="applyingCountry">
+                        <input type="text" class="form-control" id="applyingCountry" placeholder="Please Enter..." name="applyingCountry">
                       </div>
 
                       <div class="mb-3">
                         <label for="futureGoals" class="form-label">What are your future goals?</label>
-                        <input type="text" class="form-control" id="futureGoals" placeholder="" name="futureGoals">
+                        <input type="text" class="form-control" id="futureGoals" placeholder="Please Enter..." name="futureGoals">
                       </div>
-
-                <!-- <label for="admissionInstitute">What institute did you get admitted to in Canada?</label>
-                <input type="text" id="admissionInstitute" name="admissionInstitute" required>
-
-                <label for="programOfStudy">What is your program of study in Canada?</label>
-                <input type="text" id="programOfStudy" name="programOfStudy" required>
-
-                <label for="applyingCountry">Which country are you applying from?</label>
-                <input type="text" id="applyingCountry" name="applyingCountry" required>
-
-                <label for="futureGoals">What are your future goals?</label>
-                <textarea id="futureGoals" name="futureGoals" required></textarea> -->
 
                 </div>
             </section>
@@ -168,36 +119,23 @@
 
                     <div class="mb-3">
                         <label for="listeningScore" class="form-label">English Scores - Listening:</label>
-                        <input type="text" class="form-control" id="listeningScore" placeholder="" name="listeningScore">
+                        <input type="text" class="form-control" id="listeningScore" placeholder="Please Enter..." name="listeningScore">
                       </div>
 
                       <div class="mb-3">
                         <label for="readingScore" class="form-label">English Scores - Reading:</label>
-                        <input type="text" class="form-control" id="readingScore" placeholder="" name="readingScore">
+                        <input type="text" class="form-control" id="readingScore" placeholder="Please Enter..." name="readingScore">
                       </div>
 
                       <div class="mb-3">
-                        <label for="speakingScore" class="form-label">English Scores - Speaking</label>
-                        <input type="text" class="form-control" id="speakingScore" placeholder="" name="speakingScore">
+                        <label for="speakingScore" class="form-label">English Scores - Speaking:</label>
+                        <input type="text" class="form-control" id="speakingScore" placeholder="Please Enter..." name="speakingScore">
                       </div>
 
                       <div class="mb-3">
                         <label for="writingScore" class="form-label">English Scores - Writing:</label>
-                        <input type="text" class="form-control" id="writingScore" placeholder="" name="writingScore">
+                        <input type="text" class="form-control" id="writingScore" placeholder="Please Enter..." name="writingScore">
                       </div>
-
-
-                <!-- <label for="listeningScore">English Scores - Listening:</label>
-                <input type="text" id="listeningScore" name="listeningScore" required>
-
-                <label for="readingScore">English Scores - Reading:</label>
-                <input type="text" id="readingScore" name="readingScore" required>
-
-                <label for="speakingScore">English Scores - Speaking:</label>
-                <input type="text" id="speakingScore" name="speakingScore" required>
-
-                <label for="writingScore">English Scores - Writing:</label>
-                <input type="text" id="writingScore" name="writingScore" required> -->
 
                 </div>
             </section>
@@ -210,7 +148,7 @@
                     <div class="mb-3">
                         <label for="tuition" class="form-label">Did you pay your first year tuition?</label>
                         <select id="tuition" class="form-label" name="firstYearTuition" required>
-                            <option value="" disabled selected>Select...</option>
+                            <option value="" disabled selected>Choose...</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                         </select>
@@ -219,32 +157,18 @@
                     <div class="mb-3">
                         <label for="gic" class="form-label">Did you do a GIC?</label>
                         <select id="gic" class="form-label" name="gic" required>
-                            <option value="" disabled selected>Select...</option>
+                            <option value="" disabled selected>Choose...</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                         </select> 
                       </div>
 
-                <!-- <label for="tuition">Did you pay your first year tuition?</label>
-                <select id="tuition" name="firstYearTuition" required>
-                    <option value="" disabled selected>Select...</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select> -->
-
-                <!-- Other form fields -->
-
-                <!-- <label for="gic">Did you do a GIC?</label>
-                <select id="gic" name="gic" required>
-                    <option value="" disabled selected>Select...</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select> -->
-
             </div>
             </section>
 
-            <button type="submit">Submit</button>
+            <div class="btn-container">
+              <button type="submit">Submit</button>
+            </div>
         </form>
     </div>
 </body>
