@@ -38,17 +38,18 @@ textarea {
     border-radius: 4px;
 }
 
+
+
 button[type="submit"] {
-    background-color: #007bff;
+    width: 10%;
+    border-radius: 25%;
+    background: linear-gradient(to left, #ab83e0, #7658e3);
+    /* border-radius: 20px; */
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
 }
 
 
